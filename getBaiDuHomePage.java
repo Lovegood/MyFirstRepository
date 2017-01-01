@@ -30,6 +30,13 @@ public class getBaiDuHomePage {
 		}catch(Exception ex){
 			ex.printStackTrace();
 		}
-		System.out.println(result);
+		try{
+			String s_result=URLDecoder.decode(result.toString(),"utf-8");
+			System.out.println(s_result);
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+		
+		
 	}
 }
